@@ -10,7 +10,7 @@ namespace test3enums
     {
         static void Main(string[] args)
         {
-            eprac b = new eprac();
+            eprac b = new eprac(); #creates a new instance from the eprac page containing functionality of the code 
             {
                 bool keepGoing = true; #assings the boolean value to true 
                 while (keepGoing == true) #while loop utilizing the boolean value 
@@ -22,7 +22,9 @@ namespace test3enums
                     Console.WriteLine("4) Show Naughty Names");
                     Console.WriteLine("0) Exit");
                     string choice = Console.ReadLine();
-
+                    
+                    #each of the if blocks that adds names to the lists runs code from the eprac page as well as enums to add names
+                    
                     if (choice == "1")
                     {
                         b.NaughtyNice(categories.nice); #runs this line of code if user choice is "one"
